@@ -13,6 +13,11 @@
 		FD4B85351EAA278100473A42 /* CoreDataLesson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD4B85331EAA278100473A42 /* CoreDataLesson.xcdatamodeld */; };
 		FD4B85371EAA278100473A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4B85361EAA278100473A42 /* Assets.xcassets */; };
 		FD4B853A1EAA278100473A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4B85381EAA278100473A42 /* LaunchScreen.storyboard */; };
+		FD4B85421EAA2A0200473A42 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B85411EAA2A0200473A42 /* CoreDataStore.swift */; };
+		FD4B85441EAA2AA000473A42 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B85431EAA2AA000473A42 /* Reddit.swift */; };
+		FDC7D3E81EACA4F50019952B /* plain.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC7D3E51EACA4F50019952B /* plain.png */; };
+		FDC7D3E91EACA4F50019952B /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC7D3E61EACA4F50019952B /* sad.png */; };
+		FDC7D3EA1EACA4F50019952B /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC7D3E71EACA4F50019952B /* smile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FD4B85361EAA278100473A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4B85391EAA278100473A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4B853B1EAA278100473A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4B85411EAA2A0200473A42 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		FD4B85431EAA2AA000473A42 /* Reddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
+		FDC7D3E51EACA4F50019952B /* plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plain.png; sourceTree = "<group>"; };
+		FDC7D3E61EACA4F50019952B /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		FDC7D3E71EACA4F50019952B /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,25 @@
 				FD4B852C1EAA278100473A42 /* AppDelegate.swift */,
 				FD4B852E1EAA278100473A42 /* ViewController.swift */,
 				FD4B85301EAA278100473A42 /* Main.storyboard */,
+				FDC7D3E41EACA4F50019952B /* Images */,
+				FD4B85411EAA2A0200473A42 /* CoreDataStore.swift */,
+				FD4B85431EAA2AA000473A42 /* Reddit.swift */,
 				FD4B85361EAA278100473A42 /* Assets.xcassets */,
 				FD4B85381EAA278100473A42 /* LaunchScreen.storyboard */,
 				FD4B853B1EAA278100473A42 /* Info.plist */,
 				FD4B85331EAA278100473A42 /* CoreDataLesson.xcdatamodeld */,
 			);
 			path = CoreDataLesson;
+			sourceTree = "<group>";
+		};
+		FDC7D3E41EACA4F50019952B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDC7D3E51EACA4F50019952B /* plain.png */,
+				FDC7D3E61EACA4F50019952B /* sad.png */,
+				FDC7D3E71EACA4F50019952B /* smile.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +149,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC7D3E81EACA4F50019952B /* plain.png in Resources */,
 				FD4B853A1EAA278100473A42 /* LaunchScreen.storyboard in Resources */,
+				FDC7D3E91EACA4F50019952B /* sad.png in Resources */,
 				FD4B85371EAA278100473A42 /* Assets.xcassets in Resources */,
+				FDC7D3EA1EACA4F50019952B /* smile.png in Resources */,
 				FD4B85321EAA278100473A42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4B85441EAA2AA000473A42 /* Reddit.swift in Sources */,
 				FD4B852F1EAA278100473A42 /* ViewController.swift in Sources */,
 				FD4B852D1EAA278100473A42 /* AppDelegate.swift in Sources */,
+				FD4B85421EAA2A0200473A42 /* CoreDataStore.swift in Sources */,
 				FD4B85351EAA278100473A42 /* CoreDataLesson.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataLesson/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpetkevic.CoreDataLesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataLesson/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpetkevic.CoreDataLesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +333,7 @@
 				FD4B85401EAA278100473A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
