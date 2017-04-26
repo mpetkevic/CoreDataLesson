@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
 //    var i = 0
 
+    @IBOutlet weak var smilePressedButton: UIButton!
     @IBAction func smilePressed(_ sender: UIButton) {
         smilePress += 1
 //        print("Smile pressed")
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var plainPressedButtun: UIButton!
     @IBAction func plainPressed(_ sender: UIButton) {
         plainPress += 1
 //        print("Plain pressed")
@@ -38,6 +40,8 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBOutlet weak var sadPressedButton: UIButton!
     @IBAction func sadPressed(_ sender: UIButton) {
         sadPress += 1
 //        print("Sad pressed")
@@ -52,9 +56,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        smilePress = 0
-        plainPress = 0
-        sadPress = 0
+//        smilePress = 0
+//        plainPress = 0
+//        sadPress = 0
         // Do any additional setup after loading the view, typically from a nib.
     }
 
